@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace BlubbsWayOfLife
 {
-    public class Playground : Panel
+    public class Playground : UserControl
     {
         public new bool Enabled { get; set; }
 
@@ -18,12 +18,14 @@ namespace BlubbsWayOfLife
 
         public Playground()
         {
+            DoubleBuffered = true;
+
             Respawn();
         }
 
         public void Respawn()
         {
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 10; i++)
                 SpawnCell(50, 50, Color.Black);
         }
 
