@@ -34,7 +34,7 @@ namespace BlubbsWayOfLife
 
         public void Moove()
         {
-            Rectangle = new Rectangle(Rectangle.X + Playground.Random.Next(-1, 1), Rectangle.Y + Playground.Random.Next(-1, 1), Rectangle.Width, Rectangle.Height);
+            Rectangle = new Rectangle(Rectangle.X + Playground.Random.Next(-1, 2), Rectangle.Y + Playground.Random.Next(-1, 2), Rectangle.Width, Rectangle.Height);
         }
 
         public void Draw(Graphics graphics)
